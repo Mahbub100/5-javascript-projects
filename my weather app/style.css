@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    background: #4e54c8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main h1{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3.5vw;
+    margin-bottom: 3.5vw;
+    color: rgb(75, 25, 129);
+}
+main #img{
+   width: 4.4vw;
+}
+
+#search{
+    width: 37vw;
+    height: auto;
+    font-size: 2.5vw;
+   padding: .6rem;
+    border-radius: 1.3rem;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 8px rgb(57, 57, 57);
+    text-align: center;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    font-size: 2.2vw;
+    color: black;
+    margin-top: 8px;
+}
+.row h2{
+    color: white;
+}

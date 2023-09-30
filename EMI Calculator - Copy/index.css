@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main_container {
+    width: 100vw;
+    height: 100vh;
+    background: #DA22FF;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #9733EE, #DA22FF);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #9733EE, #DA22FF);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cointainer {
+    width: 60vw;
+    height: 80vh;
+    background: #8E0E00;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1F1C18, #8E0E00);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    border-radius: 1rem;
+    box-shadow: floralwhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+input {
+    padding: .5rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background: #cf11e4;
+    color: white;
+    font-size: 1rem;
+    font-weight: 900;
+    padding: .5rem 2.8rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #ff21b9;
+}
+
+.result {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+}

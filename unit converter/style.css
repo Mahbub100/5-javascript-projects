@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background: #5c0205;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #010a48, #5d0205);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #070f46, #3b0103);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color:white;
+}
+h2{
+    text-align: center;
+    margin-top: 50px;
+    padding: 50px;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.cointainer{
+    margin: .5rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 65%;
+    background-color: hsl(179, 93%, 41%);
+    box-shadow: 0px 3px 10px rgba(175, 175, 175, 0.5);
+    border-radius: 0 1.5rem;
+    border: 1px solid;
+    border-color: rgb(0, 54, 78);
+  
+}
+.inpt{
+    padding: .6rem;
+    background: #bedcd9;
+    border-radius: 1rem;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+::placeholder{
+    color: blue;
+    font-size: 15px;
+}
+
+.input-div{
+    display: flex;
+ flex-direction: column;
+  padding: 1rem;
+}
+label{
+   padding-bottom: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #070f46;
+
+}
+
+@media(max-width:700px) {
+    .cointainer{
+        width: 78%;
+    }
+}
+
+@media (max-width:1200px) {
+    .cointainer{
+        width:80%;
+        flex-direction: column;
+    }
+}

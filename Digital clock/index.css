@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.cointainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+body {
+    background: #000000;
+    color: white;
+    
+}
+
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8vw;
+    font-weight: 700;
+    background: #070331;
+    width: 70vw;
+    height: 25vh;
+    border-radius: 1rem;
+    border: 1px solid #8c00ff;
+    position: relative;
+
+}
+
+#hours {
+    background: -webkit-linear-gradient(90deg, rgb(255, 0, 0), white);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#minutes {
+    background: -webkit-linear-gradient(90deg, orange, white);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#seconds {
+    background: -webkit-linear-gradient(90deg, green, white);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#dot {
+    padding: 0 15px;
+}
+
+#ampm {
+    font-size: 2vw;
+    padding-left: 10px;
+    padding-top:1rem;
+    color: rgb(247, 13, 255);
+}
+
+.clock::before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(45deg, blue, rgb(26, 22, 13), green);
+    background-size: 200% 200%;
+    top: -5px;
+    left: -5px;
+    bottom: -5px;
+    right: -5px;
+    z-index: -1;
+    filter: blur(30px);
+    animation: glowing 5s ease infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
